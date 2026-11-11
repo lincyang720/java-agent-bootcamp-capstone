@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: agent-bootcamp-capstone
+  ai:
+    openai:
+      # 离线演示用占位符；设置环境变量 OPENAI_API_KEY 后自动覆盖为真实 Key
+      api-key: ${OPENAI_API_KEY:placeholder-not-used}
+
+logging:
+  level:
+    root: INFO
+    com.qiutian.capstone: INFO
